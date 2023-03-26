@@ -9,6 +9,8 @@ plugins {
 version = "0.1"
 group = "app"
 
+val azureSdkVersion = "12.20.3"
+
 val kotlinVersion=project.properties.get("kotlinVersion")
 repositories {
     mavenCentral()
@@ -22,10 +24,13 @@ dependencies {
     implementation("io.micronaut.objectstorage:micronaut-object-storage-core")
     // Azure
     implementation("io.micronaut.azure:micronaut-azure-sdk")
-    implementation("com.azure:azure-storage-blob:12.20.1")
+    implementation("com.azure:azure-storage-blob:$azureSdkVersion")
+
     implementation("io.micronaut.kotlin:micronaut-kotlin-runtime")
     implementation("io.micronaut.rxjava3:micronaut-rxjava3")
     implementation("io.micronaut.rxjava3:micronaut-rxjava3-http-client")
+    implementation("io.micronaut.security:micronaut-security")
+    implementation("io.micronaut.security:micronaut-security-jwt")
     implementation("jakarta.annotation:jakarta.annotation-api")
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
@@ -33,7 +38,6 @@ dependencies {
     implementation("io.micronaut:micronaut-validation")
 
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
-
 }
 
 
@@ -65,6 +69,3 @@ micronaut {
         annotations("app.*")
     }
 }
-
-
-

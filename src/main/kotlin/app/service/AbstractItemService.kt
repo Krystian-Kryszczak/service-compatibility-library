@@ -4,7 +4,7 @@ import app.model.Item
 import app.storage.cassandra.dao.ItemDao
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Maybe
-import java.util.*
+import java.util.UUID
 
 abstract class AbstractItemService<T: Item>(private val itemDao: ItemDao<T>): ItemService<T> {
     override fun save(item: T): Completable = Completable.fromPublisher(itemDao.saveReactive(item))
