@@ -7,5 +7,5 @@ import java.util.UUID
 
 interface ItemDao<T: Item>: BaseDao<T> {
     @Select
-    fun findByIdReactive(id: UUID): MappedReactiveResultSet<T>
+    fun findById(id: UUID): MappedReactiveResultSet<T>
 }

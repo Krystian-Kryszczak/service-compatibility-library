@@ -6,7 +6,7 @@ plugins {
     id("io.micronaut.application") version "3.7.4"
 }
 
-version = "0.1"
+version = "0.0.3-alpha"
 group = "app"
 
 val azureSdkVersion = "12.20.3"

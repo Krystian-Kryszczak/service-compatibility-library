@@ -10,9 +10,9 @@ import com.datastax.oss.driver.api.mapper.entity.saving.NullSavingStrategy
 @DefaultNullSavingStrategy(NullSavingStrategy.DO_NOT_SET)
 interface BaseDao<T> {
     @Insert
-    fun saveReactive(item: T): ReactiveResultSet
+    fun save(item: T): ReactiveResultSet
     @Update
-    fun updateReactive(item: T): ReactiveResultSet
+    fun update(item: T): ReactiveResultSet
     @Delete
-    fun deleteReactive(item: T): ReactiveResultSet
+    fun delete(item: T): ReactiveResultSet
 }

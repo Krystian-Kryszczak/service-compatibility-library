@@ -12,9 +12,9 @@ import java.util.UUID
 @Dao
 interface UserDao: BeingDao<User> {
     @Select(customWhereClause = "email = :email", limit = "1", allowFiltering = true)
-    fun findByEmailReactive(email: String): MappedReactiveResultSet<User>
+    fun findByEmail(email: String): MappedReactiveResultSet<User>
     @Delete(entityClass = [User::class])
-    fun deleteByIdReactive(id: UUID): ReactiveResultSet
+    fun deleteById(id: UUID): ReactiveResultSet
     @Delete(entityClass = [User::class], ifExists = true)
-    fun deleteByIdIfExistsReactive(id: UUID): MappedReactiveResultSet<Boolean>
+    fun deleteByIdIfExists(id: UUID): MappedReactiveResultSet<Boolean>
 }
