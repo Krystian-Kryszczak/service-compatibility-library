@@ -10,7 +10,7 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 @Singleton
-class CommonsCassandraStartup(private val cqlSession: CqlSession): AbstractCassandraStartup(cqlSession, logger) {
+class CommonsCassandraStartup(cqlSession: CqlSession): AbstractCassandraStartup(cqlSession, logger) {
     @EventListener
     override fun onStartupEvent(event: StartupEvent) {
         createUserTable()
