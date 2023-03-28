@@ -1,4 +1,4 @@
-package app.utils
+package app.commons.utils
 
 import io.micronaut.security.authentication.Authentication
 import java.util.UUID

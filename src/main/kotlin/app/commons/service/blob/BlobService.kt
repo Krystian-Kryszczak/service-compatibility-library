@@ -1,4 +1,4 @@
-package app.service.blob
+package app.commons.service.blob
 
 import io.micronaut.http.multipart.StreamingFileUpload
 import io.reactivex.rxjava3.core.Completable

@@ -1,7 +1,7 @@
-package app.service.exhibit
+package app.commons.service.exhibit
 
-import app.model.exhibit.Exhibit
-import app.service.ItemService
+import app.commons.model.exhibit.Exhibit
+import app.commons.service.ItemService
 import io.micronaut.http.HttpResponse
 import io.micronaut.security.authentication.Authentication
 import io.reactivex.rxjava3.core.Flowable

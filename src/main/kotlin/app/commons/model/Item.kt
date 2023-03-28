@@ -1,4 +1,4 @@
-package app.model
+package app.commons.model
 
 import com.datastax.oss.driver.api.mapper.annotations.PartitionKey
 import java.util.UUID

@@ -1,6 +1,6 @@
-package app.storage.cassandra.dao
+package app.commons.storage.cassandra.dao
 
-import app.model.Item
+import app.commons.model.Item
 import com.datastax.dse.driver.api.mapper.reactive.MappedReactiveResultSet
 import com.datastax.oss.driver.api.mapper.annotations.Select
 import java.util.UUID

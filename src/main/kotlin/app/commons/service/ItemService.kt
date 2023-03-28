@@ -1,6 +1,6 @@
-package app.service
+package app.commons.service
 
-import app.model.Item
+import app.commons.model.Item
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Maybe
 import io.reactivex.rxjava3.core.Single

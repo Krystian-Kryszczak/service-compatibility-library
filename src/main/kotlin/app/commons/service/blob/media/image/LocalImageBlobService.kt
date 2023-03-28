@@ -1,6 +1,7 @@
-package app.service.blob.media.image
+package app.commons.service.blob.media.image
 
-import app.service.blob.media.LocalMediaBlobService
+import app.commons.service.blob.media.LocalMediaBlobService
+import app.commons.service.blob.media.image.ImageBlobService
 import io.micronaut.context.annotation.Requires
 import jakarta.inject.Singleton
 

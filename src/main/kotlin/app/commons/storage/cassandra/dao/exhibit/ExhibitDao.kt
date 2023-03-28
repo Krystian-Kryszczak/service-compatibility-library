@@ -1,7 +1,7 @@
-package app.storage.cassandra.dao.exhibit
+package app.commons.storage.cassandra.dao.exhibit
 
-import app.model.exhibit.Exhibit
-import app.storage.cassandra.dao.ItemDao
+import app.commons.model.exhibit.Exhibit
+import app.commons.storage.cassandra.dao.ItemDao
 import com.datastax.dse.driver.api.mapper.reactive.MappedReactiveResultSet
 import com.datastax.oss.driver.api.mapper.annotations.CqlName
 import com.datastax.oss.driver.api.mapper.annotations.Select

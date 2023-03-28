@@ -1,6 +1,6 @@
-package app.factory.azure
+package app.commons.factory.azure
 
-import app.config.cloud.azure.AzureBlobConfig
+import app.commons.config.cloud.azure.AzureBlobConfig
 import com.azure.core.credential.TokenCredential
 import com.azure.storage.blob.BlobServiceClient
 import com.azure.storage.blob.BlobServiceClientBuilder

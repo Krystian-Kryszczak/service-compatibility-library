@@ -1,6 +1,7 @@
-package app.service.blob.media.audio
+package app.commons.service.blob.media.audio
 
-import app.service.blob.media.LocalMediaBlobService
+import app.commons.service.blob.media.LocalMediaBlobService
+import app.commons.service.blob.media.audio.AudioBlobService
 import io.micronaut.context.annotation.Requires
 import jakarta.inject.Singleton
 

@@ -1,4 +1,4 @@
-package app.service.blob.media
+package app.commons.service.blob.media
 
 import com.azure.storage.blob.BlobClient
 import com.azure.storage.blob.BlobContainerClient
@@ -13,7 +13,8 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 import java.io.InputStream
 import java.util.*
 
-abstract class AzureMediaBlobService(azureBlobServiceClient: BlobServiceClient, containerName: String): MediaBlobService {
+abstract class AzureMediaBlobService(azureBlobServiceClient: BlobServiceClient, containerName: String):
+    MediaBlobService {
     private val blobContainerClient: BlobContainerClient = azureBlobServiceClient.createBlobContainer(containerName.lowercase(Locale.getDefault()))
 
     override fun save(inputStream: InputStream, creatorId: UUID, private: Boolean): Single<UUID> = Single.create<UUID> {

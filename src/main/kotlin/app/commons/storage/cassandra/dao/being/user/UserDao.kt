@@ -1,7 +1,7 @@
-package app.storage.cassandra.dao.being.user
+package app.commons.storage.cassandra.dao.being.user
 
-import app.model.being.user.User
-import app.storage.cassandra.dao.being.BeingDao
+import app.commons.model.being.user.User
+import app.commons.storage.cassandra.dao.being.BeingDao
 import com.datastax.dse.driver.api.core.cql.reactive.ReactiveResultSet
 import com.datastax.dse.driver.api.mapper.reactive.MappedReactiveResultSet
 import com.datastax.oss.driver.api.mapper.annotations.Dao

@@ -1,4 +1,4 @@
-package app.service.blob.media
+package app.commons.service.blob.media
 
 import com.datastax.oss.driver.api.core.uuid.Uuids
 import io.micronaut.http.multipart.StreamingFileUpload

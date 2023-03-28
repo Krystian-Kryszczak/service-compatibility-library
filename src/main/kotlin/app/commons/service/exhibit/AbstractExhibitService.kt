@@ -1,8 +1,8 @@
-package app.service.exhibit
+package app.commons.service.exhibit
 
-import app.model.exhibit.Exhibit
-import app.service.AbstractItemService
-import app.storage.cassandra.dao.exhibit.ExhibitDao
+import app.commons.model.exhibit.Exhibit
+import app.commons.service.AbstractItemService
+import app.commons.storage.cassandra.dao.exhibit.ExhibitDao
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Maybe
 import java.util.UUID

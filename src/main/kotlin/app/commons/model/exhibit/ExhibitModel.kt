@@ -1,4 +1,4 @@
-package app.model.exhibit
+package app.commons.model.exhibit
 
 import io.micronaut.security.authentication.Authentication
 

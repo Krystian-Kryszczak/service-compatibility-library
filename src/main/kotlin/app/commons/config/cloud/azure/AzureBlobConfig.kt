@@ -1,4 +1,4 @@
-package app.config.cloud.azure
+package app.commons.config.cloud.azure
 
 import io.micronaut.context.annotation.ConfigurationProperties
 

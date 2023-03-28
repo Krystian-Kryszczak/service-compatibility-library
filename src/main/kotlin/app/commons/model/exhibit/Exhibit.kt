@@ -1,6 +1,6 @@
-package app.model.exhibit
+package app.commons.model.exhibit
 
-import app.model.NamedItem
+import app.commons.model.NamedItem
 import java.util.UUID
 
 abstract class Exhibit(

@@ -1,7 +1,7 @@
-package app.service
+package app.commons.service
 
-import app.model.Item
-import app.storage.cassandra.dao.ItemDao
+import app.commons.model.Item
+import app.commons.storage.cassandra.dao.ItemDao
 import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Maybe
 import java.util.UUID

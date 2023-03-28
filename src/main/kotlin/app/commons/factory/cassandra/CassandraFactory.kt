@@ -1,7 +1,7 @@
-package app.factory.cassandra
+package app.commons.factory.cassandra
 
-import app.storage.cassandra.dao.CommonsDaoMapper
-import app.storage.cassandra.dao.being.user.UserDao
+import app.commons.storage.cassandra.dao.CommonsDaoMapper
+import app.commons.storage.cassandra.dao.being.user.UserDao
 import com.datastax.oss.driver.api.core.CqlIdentifier
 import com.datastax.oss.driver.api.core.CqlSession
 import io.micronaut.context.annotation.Factory

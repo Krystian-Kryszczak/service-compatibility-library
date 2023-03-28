@@ -1,6 +1,6 @@
-package app.model.being.user
+package app.commons.model.being.user
 
-import app.model.being.Being
+import app.commons.model.being.Being
 import com.datastax.oss.driver.api.mapper.annotations.*
 import java.util.UUID
 

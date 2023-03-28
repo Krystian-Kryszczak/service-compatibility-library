@@ -1,3 +1,3 @@
 
-rootProject.name="service-compatibility-library"
+rootProject.name="service-commons-library"
 

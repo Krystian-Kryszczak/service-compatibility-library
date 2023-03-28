@@ -1,6 +1,6 @@
-package app.service.blob.media.video
+package app.commons.service.blob.media.video
 
-import app.service.blob.media.LocalMediaBlobService
+import app.commons.service.blob.media.LocalMediaBlobService
 import io.micronaut.context.annotation.Requires
 import jakarta.inject.Singleton
 

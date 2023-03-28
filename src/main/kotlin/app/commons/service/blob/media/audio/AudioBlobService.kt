@@ -1,5 +1,5 @@
-package app.service.blob.media.audio
+package app.commons.service.blob.media.audio
 
-import app.service.blob.media.MediaBlobService
+import app.commons.service.blob.media.MediaBlobService
 
 interface AudioBlobService: MediaBlobService

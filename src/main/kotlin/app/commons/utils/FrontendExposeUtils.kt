@@ -1,6 +1,6 @@
-package app.utils
+package app.commons.utils
 
-import app.model.being.user.User
+import app.commons.model.being.user.User
 
 object FrontendExposeUtils {
     fun formatAuthorData(user: User): String {
