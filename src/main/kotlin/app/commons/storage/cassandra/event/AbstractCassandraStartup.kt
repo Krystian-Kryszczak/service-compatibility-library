@@ -29,6 +29,11 @@ abstract class AbstractCassandraStartup(private val cqlSession: CqlSession, priv
             .createTable(name).ifNotExists()
             .withPartitionKey("id", DataTypes.TIMEUUID)
 
+    protected fun execute(query: String) {
+        cqlSession.execute(query)
+        logger.info("Query \"${query}\" was executed.")
+    }
+
     protected fun execute(statement: SimpleStatement) {
         cqlSession.execute(statement)
         logger.info("Query \"${statement.query}\" was executed.")
