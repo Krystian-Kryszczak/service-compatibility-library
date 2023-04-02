@@ -10,7 +10,7 @@ object FrontendExposeUtils {
         if (!userName.isNullOrBlank()) result += userName
 
         val userLastname = user.lastname
-        if (!userLastname.isNullOrBlank()) result += userLastname
+        if (!userLastname.isNullOrBlank()) result += " $userLastname"
 
         return result
     }
