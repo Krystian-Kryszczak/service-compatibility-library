@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.6.21"
+    id("org.jetbrains.kotlin.jvm") version "1.8.20"
     id("org.jetbrains.kotlin.kapt") version "1.6.21"
     id("org.jetbrains.kotlin.plugin.allopen") version "1.6.21"
     id("com.github.johnrengelman.shadow") version "7.1.2"
@@ -42,6 +42,9 @@ dependencies {
 
 
 java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
     sourceCompatibility = JavaVersion.toVersion("17")
 }
 
@@ -65,4 +68,8 @@ micronaut {
         incremental(true)
         annotations("app.*")
     }
+}
+kotlin {
+    jvmToolchain(17)
+    jvmToolchain(11)
 }
